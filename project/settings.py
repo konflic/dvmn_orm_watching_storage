@@ -20,7 +20,7 @@ INSTALLED_APPS = ['datacenter']
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = os.getenv('DEBUG').lower() == 'true'
+DEBUG = os.getenv('DEBUG', '').lower() == 'true'
 
 ROOT_URLCONF = 'project.urls'
 
