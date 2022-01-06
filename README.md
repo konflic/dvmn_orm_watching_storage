@@ -7,6 +7,7 @@
 Python3 должен быть уже установлен.
 
 Затем используйте [виртуальное окружение](https://docs.python.org/3/library/venv.html) и `pip` (или `pip3`, есть конфликт с Python2) для установки зависимостей:
+
 ```
 python3 -m venv venv
 source venv/bin/activate
@@ -15,9 +16,10 @@ pip install -r requirements.txt
 
 Для запуска приложения:
 
-1. Прописать значения для всех необходимых переменных в файле .env согласно шаблону.
-2. Как правильно заполнить .env написано [здесь](https://pypi.org/project/python-dotenv/0.9.1/#usages)
-3. Выполнить команду:
+1. Создать в корне проекта файл .env.
+2. Прописать значения для всех необходимых переменных в файле .env согласно шаблону .env.example
+3. Как правильно заполнить .env написано [здесь](https://pypi.org/project/python-dotenv/0.9.1/#usages)
+4. Выполнить команду:
 
 ```
 python manage.py runserver
